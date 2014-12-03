@@ -16,4 +16,4 @@ app.configure(function() {
 require('./routes/play')(app);
 require('./routes/admin')(app);
 
-app.listen(1122);
+app.listen(80);
