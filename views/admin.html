@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MancJS: JavaScript Perf Golf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <link href="css/app.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{#game.running}}
+          <div class="bs-callout bs-callout-info">
+            <h4>{{game.title}} is running</h4>
+            <p>Entries are private, submit <a href="/">here</a></p>
+          </div>
+        {{/game.running}}
+
+        {{^game.running}}
+          <div class="bs-callout bs-callout-danger">
+            <h4>Game is stopped</h4>
+            <p>Entries are visible to other users</p>
+          </div>
+        {{/game.running}}
+
+        {{#allGames}}
+          <form method="post" action="/start/{{id}}" class="game">
+            <h1>{{title}}</h1>
+            <h2>{{description}}</h2>
+            <input type="submit" value="Start this game" class="btn btn-lg btn-success" />
+          </form>
+        {{/allGames}}
+
+        <div class="stop-button">
+          <a href="/stop" class="btn btn-lg btn-danger">Stop game</a>
+        </div>
+
+        {{#game.entries.length}}
+          <label>Entries</label>
+          <div>{{game.entries.length}}</div>
+        {{/game.entries.length}}
+
+        {{#gameData}}
+          <label>Data</label>
+          <pre>{{gameData}}</pre>
+        {{/gameData}}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

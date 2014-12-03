@@ -1,0 +1,205 @@
+body {
+  font-size: 18px;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin: 10px auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #444;
+}
+
+label {
+  display: block;
+  padding: 30px 0 5px 0;
+}
+
+label span {
+  color: #aaa;
+}
+
+input[type='text'], textarea {
+  color: #555;
+  padding: 8px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+
+input[readonly] {
+  opacity: 0.4;
+}
+
+.entries {
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.entries a .entry .name {
+  color: #444;
+}
+
+.entries .entry {
+  float: left;
+  position: relative;
+  padding: 0 30px 30px 30px;
+}
+
+.entries .entry.invalid {
+  opacity: 0.1;
+}
+
+.entries .entry .name {
+  text-align: center;
+  margin: 0 -25px 10px -25px;
+  padding: 10px 0;
+  width: 180px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.entries .entry img {
+  border-radius: 50%;
+  border: solid 1px #ddd;
+  width: 130px;
+  height: 130px;
+}
+
+.entries .entry .score {
+  position: absolute;
+  background: url('/img/golfball.png') no-repeat center center;
+  color: #444;
+  width: 100px;
+  height: 100px;
+  bottom: -10px;
+  right: -10px;
+  padding-top: 26px;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid 1px #eee;
+  text-shadow: 2px 2px #fff;
+}
+
+.entries .entry .score img {
+  margin-top: -3px;
+  margin-left: 2px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+}
+
+.submit-form input[type='text'] {
+  width: 350px;
+  margin: 5px 10px 5px 0;
+}
+
+.submit-form input[type='file'] {
+  display: none;
+}
+
+.submit-form .footer {
+  padding: 10px 0;
+}
+
+.add-entry {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.95;
+  background: #fdfdfd;
+  box-shadow: 5px 5px 10px #555;
+  padding-bottom: 15px;
+}
+
+pre {
+  max-height: 500px;
+  overflow: scroll;
+}
+
+code {
+  color: #555;
+  font-family: Courier New;
+}
+
+form.game {
+  position: relative;
+  padding: 10px 10px 10px 15px;
+  background: #f8f8f8;
+  margin: 10px 0;
+}
+
+form.game h1 {
+  font-weight: 200;
+  font-size: 22px;
+  margin: 3px 0;
+}
+
+form.game h2 {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 4px 0;
+}
+
+form.game input[type='submit'] {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+
+/* callouts */
+
+.stop-button {
+  padding: 10px 0;
+}
+
+a.btn {
+  font-weight: 400;
+}
+
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+
+.bs-callout h4 {
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+
+.bs-callout-success {
+  background-color: #f0fff3;
+  border-color: #e0efe3;
+}
+
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
