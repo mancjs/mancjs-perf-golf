@@ -4,10 +4,10 @@ var perfer = require('../perfer/perfer');
 var _ = require('underscore');
 
 var games = [
-  { id: 1, title: 'Halves', description: '...', file: 'halves' },
-  { id: 2, title: 'Number Sort', description: '...', file: 'sort', disableSort: true },
-  { id: 3, title: 'Slow Lookup', description: '...', file: 'lookup' },
-  { id: 4, title: 'Array Search', description: '...', file: 'search' }
+  { id: 1, title: 'Halves', description: 'Your run function will be passed an array of numbers. Your job is to half each number and return a new array containing the respective half values. The input array will contain only numbers that are evenly divisible by 2.', file: 'halves' },
+  { id: 2, title: 'Number Sort', description: 'Your run function will be passed an array of unsorted numbers. Sort the numbers (low to high) and return a sorted array. Array.prototype.sort, unsurprisingly, is disabled.', file: 'sort', disableSort: true },
+  { id: 3, title: 'Slow Lookup', description: 'Your run function will be passed an array of string-based keys for which you need to find the appropriate values. For a given key, the correct value can be obtained by calling the global lookup.get(key, callback) function. Each time you call lookup.get, it becomes slower the next time. Return an array of the respective values as specified by the keys passed to your run function.', file: 'lookup' },
+  { id: 4, title: 'Array Search', description: 'Your run function will be passed an object containing two properties. The first property, numbers, is a sorted array of random numbers. The second property, numbersToFind, is an array containing individual numbers that you must locate the index of within the array numbers. Return an array containing the respective indexes of the numbers specificed by numbersToFind in the array numbers.', file: 'search' }
 ];
 
 var currentGame;
