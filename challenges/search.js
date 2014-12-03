@@ -3,7 +3,7 @@ var input = [];
 var load = function() {
   var numbersToFind = [];
 
-  for (var i=0; i<10; i++) {
+  for (var i=0; i<50; i++) {
     numbersToFind.push(Math.round(Math.random() * 999999));
   }
 
